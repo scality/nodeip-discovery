@@ -1,6 +1,6 @@
 LOCALBIN ?= $(shell pwd)/bin
 GOLANGCI_LINT = $(LOCALBIN)/golangci-lint
-GOLANGCI_LINT_VERSION ?= v2.5.0
+GOLANGCI_LINT_VERSION ?= v2.11.4
 
 IMG ?= nodeip-discovery:latest
 
