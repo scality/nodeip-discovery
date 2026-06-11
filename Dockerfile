@@ -1,4 +1,4 @@
-FROM golang:1.26 AS builder
+FROM golang:1.26@sha256:d184d9be4c13614e28498d632eeaaac704d662f18ad357e1df74a44424236cea AS builder
 
 ARG TARGETOS
 ARG TARGETARCH
