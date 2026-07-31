@@ -144,7 +144,7 @@ type MockIPExtracter_ExtractIPs_Call struct {
 
 // ExtractIPs is a helper method to define mock.On call
 //   - ifaces []domain.IfaceAddrs
-func (_e *MockIPExtracter_Expecter) ExtractIPs(ifaces interface{}) *MockIPExtracter_ExtractIPs_Call {
+func (_e *MockIPExtracter_Expecter) ExtractIPs(ifaces any) *MockIPExtracter_ExtractIPs_Call {
 	return &MockIPExtracter_ExtractIPs_Call{Call: _e.mock.On("ExtractIPs", ifaces)}
 }
 
@@ -223,7 +223,7 @@ type MockNodeAnnotater_AnnotateNode_Call struct {
 // AnnotateNode is a helper method to define mock.On call
 //   - ctx context.Context
 //   - formattedIPs string
-func (_e *MockNodeAnnotater_Expecter) AnnotateNode(ctx interface{}, formattedIPs interface{}) *MockNodeAnnotater_AnnotateNode_Call {
+func (_e *MockNodeAnnotater_Expecter) AnnotateNode(ctx any, formattedIPs any) *MockNodeAnnotater_AnnotateNode_Call {
 	return &MockNodeAnnotater_AnnotateNode_Call{Call: _e.mock.On("AnnotateNode", ctx, formattedIPs)}
 }
 
