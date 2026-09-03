@@ -14,6 +14,14 @@ A ready-to-use [dev container](.devcontainer/) is provided with the Go toolchain
 Docker-in-Docker, and the recommended VS Code extensions. Opening the repository
 in a supporting editor is the quickest way to get a consistent environment.
 
+Everyday commands:
+
+```sh
+make test                # unit tests (Ginkgo + Gomega)
+make lint                # golangci-lint
+make docker-build        # build the container image
+```
+
 ## Architecture
 
 The project uses a clean-architecture layering with an inward-only dependency
@@ -49,6 +57,12 @@ owns its responsibility:
   closes it.
 - Make sure `go test ./...` and `golangci-lint run` pass before opening a PR,
   and keep PRs focused.
+
+## Reporting issues
+
+Use GitHub issues to report bugs or request features. Before opening one, search the existing
+issues to avoid duplicates, and include enough context to reproduce: the version or commit, the
+environment, the steps you took, and the expected versus actual behavior.
 
 ## Keep the docs in sync
 
