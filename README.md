@@ -1,5 +1,10 @@
 # nodeip-discovery
 
+[![Post Merge](https://github.com/scality/nodeip-discovery/actions/workflows/post-merge.yaml/badge.svg)](https://github.com/scality/nodeip-discovery/actions/workflows/post-merge.yaml)
+[![GitHub release](https://img.shields.io/github/v/release/scality/nodeip-discovery)](https://github.com/scality/nodeip-discovery/releases/latest)
+[![Go version](https://img.shields.io/github/go-mod/go-version/scality/nodeip-discovery)](go.mod)
+[![License](https://img.shields.io/github/license/scality/nodeip-discovery)](LICENSE)
+
 A Kubernetes node-level agent that discovers the local network interfaces of the
 node it runs on, filters their IPv4 addresses against a configured set of CIDRs
 and a given list of excluded IPs and writes the result to a node annotation.
