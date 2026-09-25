@@ -13,6 +13,8 @@ its architecture see [DESIGN.md](DESIGN.md).
 A ready-to-use [dev container](.devcontainer/) is provided with the Go toolchain,
 Docker-in-Docker, and the recommended VS Code extensions. Opening the repository
 in a supporting editor is the quickest way to get a consistent environment.
+It uses a prebuilt image from [scality/devcontainers](https://github.com/scality/devcontainers).
+The image is private: log in to `ghcr.io` once, as described in that repository's README.
 
 Everyday commands:
 
