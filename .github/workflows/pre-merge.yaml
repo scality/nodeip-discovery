@@ -54,6 +54,8 @@ jobs:
     secrets: inherit
 
   test-e2e:
+    # No e2e suite yet: MK8S-278.
+    if: false
     uses: ./.github/workflows/test-e2e.yml
     secrets: inherit
 
