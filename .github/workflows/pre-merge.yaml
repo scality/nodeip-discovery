@@ -18,7 +18,7 @@ jobs:
 
   go-generated:
     # On a Renovate branch, pushes the regenerated mocks itself.
-    uses: scality/workflows/.github/workflows/go-generated.yaml@1c3bb83b992d0a512c08755606ee6439b26c463b # main, no release yet
+    uses: scality/workflows/.github/workflows/go-generated.yaml@1c3bb83b992d0a512c08755606ee6439b26c463b # v2.13.0
     secrets:
       ACTIONS_APP_PRIVATE_KEY: ${{ secrets.ACTIONS_APP_PRIVATE_KEY }}
     with:
